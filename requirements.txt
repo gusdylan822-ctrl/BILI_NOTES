@@ -1,0 +1,6 @@
+requests
+yt-dlp
+faster-whisper
+gradio
+# 不用单独装 av：转文字时用 ffmpeg 直接解码音频，不走 faster-whisper 自带的 av 解码，
+# 避开 av 各版本和 Python 3.14 的兼容问题（av 12.3.0 在 Python 3.14 上编译会失败）。
